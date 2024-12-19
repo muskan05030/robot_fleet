@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.App header {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header div {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+header button {
+  background-color: white;
+  color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+header button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Robot List Section */
+.robot-list {
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.robot-list h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.robot-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.robot-list th, .robot-list td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.robot-list th {
+  background-color: #007bff;
+  color: white;
+}
+
+.robot-list tr.highlight {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.robot-list tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Map Section */
+.map-view {
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.map-view h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.map-view .leaflet-container {
+  height: 400px;
+  width: 100%;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+}
+
+/* Popup Styles */
+.leaflet-popup-content {
+  font-size: 0.9rem;
+}
+
+.leaflet-popup-content b {
+  color: #007bff;
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: #f1f1f1;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header div {
+    flex-direction: column;
+  }
+
+  header button {
+    margin-bottom: 0.5rem;
+  }
+
+  .robot-list table, .map-view .leaflet-container {
+    font-size: 0.85rem;
+  }
+}
